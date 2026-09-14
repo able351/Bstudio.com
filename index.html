@@ -1,14 +1,216 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Bstudio.com</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
+
+
 <body>
 
-    <h1>Bstudio.com</h1>
-    <p>B's Animation Studio</p>
+    <!-- =========================
+         상단
+    ========================== -->
+
+    <header>
+
+        <div class="header-inner">
+
+            <div class="logo">
+                Bstudio.com
+            </div>
+
+            <div id="user-area">
+
+                <button
+                    id="login-button"
+                    class="header-button"
+                >
+                    로그인
+                </button>
+
+                <button
+                    id="signup-button"
+                    class="header-button"
+                >
+                    회원가입
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         메인
+    ========================== -->
+
+    <main>
+
+
+        <!-- =====================
+             로그인 / 회원가입
+        ====================== -->
+
+        <section
+            id="auth-box"
+            class="box hidden"
+        >
+
+            <h2 id="auth-title">
+                로그인
+            </h2>
+
+
+            <input
+                id="email"
+                type="email"
+                placeholder="이메일"
+            >
+
+
+            <input
+                id="password"
+                type="password"
+                placeholder="비밀번호"
+            >
+
+
+            <div class="auth-buttons">
+
+                <button id="auth-submit">
+                    로그인
+                </button>
+
+                <button
+                    id="auth-cancel"
+                    class="gray-button"
+                >
+                    닫기
+                </button>
+
+            </div>
+
+
+            <p id="auth-message"></p>
+
+        </section>
+
+
+
+        <!-- =====================
+             관리자 파일 업로드
+        ====================== -->
+
+        <section
+            id="upload-box"
+            class="box hidden"
+        >
+
+            <h2>
+                📁 새 파일 게시
+            </h2>
+
+
+            <label>
+                파일
+            </label>
+
+            <input
+                id="file-input"
+                type="file"
+            >
+
+
+            <label>
+                제목
+            </label>
+
+            <input
+                id="post-title"
+                type="text"
+                placeholder="게시물 제목"
+            >
+
+
+            <label>
+                설명
+            </label>
+
+            <textarea
+                id="post-description"
+                placeholder="게시물 설명"
+            ></textarea>
+
+
+            <button
+                id="upload-button"
+                class="upload-button"
+            >
+                게시하기
+            </button>
+
+
+            <p id="upload-message"></p>
+
+        </section>
+
+
+
+        <!-- =====================
+             게시물
+        ====================== -->
+
+        <section>
+
+            <h2 class="section-title">
+                게시물
+            </h2>
+
+
+            <div id="posts">
+
+                <p class="loading">
+                    게시물을 불러오는 중...
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         Supabase
+    ========================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+    <!-- =========================
+         내 JavaScript
+    ========================== -->
+
+    <script src="app.js"></script>
 
 </body>
+
 </html>
