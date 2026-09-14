@@ -1,0 +1,447 @@
+/* =========================
+   기본 설정
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    background: #f3f3f3;
+
+    color: #222;
+
+    font-family:
+        Arial,
+        "Noto Sans KR",
+        sans-serif;
+}
+
+
+/* =========================
+   헤더
+========================= */
+
+header {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background: white;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.header-inner {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 15px 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+.header-button {
+    margin-left: 5px;
+}
+
+
+/* =========================
+   메인
+========================= */
+
+main {
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    padding: 0 15px;
+}
+
+
+/* =========================
+   박스
+========================= */
+
+.box {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   입력
+========================= */
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 7px 0 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+}
+
+
+textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 5px;
+}
+
+
+/* =========================
+   버튼
+========================= */
+
+button {
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 10px 15px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.gray-button {
+    background: #999;
+}
+
+
+.upload-button {
+    width: 100%;
+
+    font-size: 16px;
+
+    padding: 13px;
+}
+
+
+.auth-buttons {
+    display: flex;
+
+    gap: 5px;
+}
+
+
+/* =========================
+   메시지
+========================= */
+
+#auth-message,
+#upload-message {
+    color: #666;
+
+    white-space: pre-wrap;
+}
+
+
+.loading {
+    color: #888;
+}
+
+
+/* =========================
+   게시물
+========================= */
+
+.post {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+}
+
+
+.post-header {
+    padding: 17px;
+}
+
+
+.post-title {
+    margin: 0 0 7px;
+
+    font-size: 21px;
+
+    word-break: break-word;
+}
+
+
+.post-date {
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   미리보기
+========================= */
+
+.preview-image,
+.preview-video {
+    width: 100%;
+
+    max-height: 600px;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: #111;
+}
+
+
+.audio-container {
+    padding: 20px;
+
+    background: #fafafa;
+}
+
+
+.audio-container audio {
+    width: 100%;
+}
+
+
+/* =========================
+   설명
+========================= */
+
+.post-description {
+    padding: 15px;
+
+    white-space: pre-wrap;
+
+    word-break: break-word;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   파일 정보
+========================= */
+
+.file-box {
+    padding: 15px;
+
+    background: #fafafa;
+
+    border-top: 1px solid #eee;
+}
+
+
+.file-name {
+    font-weight: bold;
+
+    word-break: break-all;
+
+    margin-bottom: 5px;
+}
+
+
+.file-size {
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+.download-button {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 9px 13px;
+
+    border-radius: 7px;
+
+    background: #222;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+.download-button:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   댓글
+========================= */
+
+.comments {
+    padding: 15px;
+
+    border-top: 1px solid #eee;
+}
+
+
+.comments-title {
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.comment {
+    padding: 9px 0;
+
+    border-bottom: 1px solid #eee;
+
+    word-break: break-word;
+}
+
+
+.comment-user {
+    font-weight: bold;
+
+    margin-right: 5px;
+}
+
+
+.comment-text {
+    color: #333;
+}
+
+
+.no-comments {
+    color: #999;
+
+    font-size: 14px;
+
+    padding: 8px 0;
+}
+
+
+.comment-form {
+    display: flex;
+
+    gap: 6px;
+
+    margin-top: 12px;
+}
+
+
+.comment-input {
+    flex: 1;
+
+    margin: 0;
+}
+
+
+.comment-button {
+    white-space: nowrap;
+}
+
+
+/* =========================
+   모바일
+========================= */
+
+@media (max-width: 600px) {
+
+    .header-inner {
+        padding: 13px;
+    }
+
+
+    .logo {
+        font-size: 20px;
+    }
+
+
+    .header-button {
+        padding: 8px 10px;
+
+        font-size: 12px;
+    }
+
+
+    main {
+        margin-top: 20px;
+    }
+
+
+    .comment-form {
+        flex-direction: column;
+    }
+
+
+    .comment-button {
+        width: 100%;
+    }
+
+}
