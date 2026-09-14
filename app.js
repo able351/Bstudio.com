@@ -10,11 +10,11 @@
 // Supabase 프로젝트를 만든 후 이 두 값을 입력한다.
 
 const SUPABASE_URL =
-    "여기에_SUPABASE_URL";
+    "https://raktqtztftjrqwyfvzrh.supabase.co";
 
 
 const SUPABASE_KEY =
-    "여기에_SUPABASE_PUBLISHABLE_KEY";
+    "sb_publishable_60scRX1seSsQWdWnPcNaTg_9FKBUAUE";
 
 
 // Supabase 연결
@@ -32,7 +32,7 @@ const supabaseClient =
 // 나중에 네 Supabase 계정의 UUID를 입력한다.
 
 const ADMIN_ID =
-    "여기에_관리자_UUID";
+    "ef0d2be6-5dfe-40d6-80f6-eee2502bf8fc";
 
 
 // Storage Bucket 이름
