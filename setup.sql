@@ -125,7 +125,7 @@ to authenticated
 with check (
 
     auth.uid() =
-    '여기에_관리자_UUID'
+    'ef0d2be6-5dfe-40d6-80f6-eee2502bf8fc'
 
 );
 
